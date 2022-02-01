@@ -35,7 +35,7 @@
                 <b-button size ="sm" variant="success" :to="{name: 'Company', params: {companyId: row.item.id}}">
                   Ver Más
                 </b-button>
-                <b-button size ="sm" variant="warning">
+                <b-button size ="sm" variant="warning" :to="{name: 'AddValue', params: {companyId: row.item.id}}">
                   Nuevo Valor
                 </b-button>
                 <b-button size ="sm" variant="primary" :to="{name: 'EditCompany', params: {companyId: row.item.id}}">

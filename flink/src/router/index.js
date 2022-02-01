@@ -26,6 +26,11 @@ export default new Router({
       component: () => import('@/components/Company/EditCompany.vue')
     },
     {
+      path: '/companies/:companyId/nuevo_valor',
+      name: 'AddValue',
+      component: () => import('@/components/Company/AddValue.vue')
+    },
+    {
       path: '/companies/:companyId/delete',
       name: 'DeleteCompany',
       component: () => import('@/components/Company/DeleteCompany.vue')
