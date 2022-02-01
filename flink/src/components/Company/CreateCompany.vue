@@ -2,7 +2,7 @@
   <div>
     <b-navbar type="dark" variant="dark">
       <b-navbar-nav>
-        <b-nav-item href="/">Activities</b-nav-item>
+        <b-nav-item href="/">Companies</b-nav-item>
       </b-navbar-nav>
     </b-navbar>
     

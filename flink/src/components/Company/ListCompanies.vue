@@ -38,13 +38,13 @@
                 <b-button size ="sm" variant="primary">
                   Editar
                 </b-button>
-                <b-button size ="sm" variant="danger">
+                <b-button size ="sm" variant="danger" :to="{name: 'DeleteCompany', params: {companyId: row.item.id}}">
                   Eliminar
                 </b-button>
               </template>
             </b-table>
 
-            <b-button size ="sm" variant="primary">
+            <b-button size ="sm" variant="primary" :to="{name: 'CreateCompany'}">
               Agregar
             </b-button>
           </div>

@@ -15,6 +15,11 @@ export default new Router({
       name: 'CreateCompany',
       component: () => import('@/components/Company/CreateCompany.vue')
     },
+    {
+      path: '/companies/:companyId/delete',
+      name: 'DeleteCompany',
+      component: () => import('@/components/Company/DeleteCompany.vue')
+    },
   ],
   mode: 'history',
 })
