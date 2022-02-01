@@ -32,10 +32,13 @@
                 <p>{{row.item.symbol}}</p>
               </template>
               <template v-slot:cell(action)="row">
-                <b-button size ="sm" variant="success">
+                <b-button size ="sm" variant="success" :to="{name: 'Company', params: {companyId: row.item.id}}">
+                  Ver Más
+                </b-button>
+                <b-button size ="sm" variant="warning">
                   Nuevo Valor
                 </b-button>
-                <b-button size ="sm" variant="primary">
+                <b-button size ="sm" variant="primary" :to="{name: 'EditCompany', params: {companyId: row.item.id}}">
                   Editar
                 </b-button>
                 <b-button size ="sm" variant="danger" :to="{name: 'DeleteCompany', params: {companyId: row.item.id}}">
